@@ -1,0 +1,11 @@
+{
+  "host": "localhost",
+  "rulefilePath": "/var/lib/suricata/rules/test-ddos.rules",
+  "name": "testnode",
+  "input.toppic": "spring-boot-exchange-input",
+  "queue.output": "spring-boot-exchange-output",
+  "routing.key.input":"testnode.input",
+  "routing.key.addrule":"testnode.addrule",
+  "queue.rule": "testnode_rule",
+  "queue.input": "testnode_input"
+}

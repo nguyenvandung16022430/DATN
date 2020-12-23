@@ -1,0 +1,18 @@
+{
+    "start":{
+        "param":"-c",
+        "cmd":"suricata -c /etc/suricata/suricata.yaml -s /var/lib/suricata/rules/test-ddos.rules -i enp3s0"
+    },
+    "stop":{
+        "param":"-c",
+        "cmd":"pkill -f 'suricata'"
+    },
+    "deletePidFile":{
+        "param":"-c",
+        "cmd":"rm -f /var/run/suricata.pid"
+    },
+    "log":{
+        "param":"-c",
+        "cmd":"tail -n 20 /var/log/suricata/fast.log"
+    }
+}
